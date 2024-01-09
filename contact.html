@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CONTACT</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d2b34c5e2f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="lumina3.css">
+    </head>
+
+<body>
+    <div class="container-fluid">
+
+        <header class="header">
+
+            <div class="logo-menu">
+
+                <div class="logo">
+                    <a href="index3.html">
+                        <img src="logo3.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="menu">
+                    <nav class="sidebar">
+                        <div class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">EXHIBITION SHOWCASE</a></li>
+                            <li><a href="#">INDIVIDUAL EXHIBITION</a></li>
+                            <li><a href="#">SPONSORS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <div class="instagram">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </header>
+
+
+        
+        <div class="content">
+    
+            <div class="container-contact">
+              <div class="row">
+                <div class="col-md-5 mr-auto">
+                  <h2>Contact Us</h2>
+                  <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat autem corrupti asperiores accusantium et fuga! Facere excepturi, quo eos, nobis doloremque dolor labore expedita illum iusto, aut repellat fuga!</p>
+                </div>
+        
+                <div class="col-md-6">
+                  <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                    <div class="row">
+                      
+                      <div class="col-md-12 form-group">
+                        <label for="name" class="col-form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="email" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                      </div>
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="message" class="col-form-label">Message</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                      </div>
+                    </div>
+                  </form>
+    
+                </div>
+              </div>
+        
+
+
+        <footer class="info">
+            <div class="info-up">
+                <div class="item1">University of Malta</div>
+                <div class="item2">15.05.24</div>
+                <div class="item3">2024</div>
+            </div>
+            <div class="info-separator"><span></span></div> 
+            <!-- Separator Line -->
+            <div class="info-down">
+                <div class="item4">Faculty of Media and Knowledge Sciences</div>
+                <div class="item5">Placeholder Text</div>
+                <div class="item6">Placeholder Text</div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <!-- SCROLL ARROW -->
+    <div class="scroll-arrow">
+        <a href="#page-bottom" class="icon-wrapper">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>  
+
+
+    
+     <!-- BOOTSTRAP Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+     <script>
+        window.onload = function() {
+            const elements = document.querySelectorAll('.main-content p');
+            let delay = 0;
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('fade-in');
+                }, delay);
+                delay += 1000; // Increase delay for each element
+            });
+        };
+    </script>
+
+    <script>
+    let slideIndex = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelectorAll(".carousel-images img");
+        slides[slideIndex].style.display = "none";
+        slideIndex += step;
+        
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+
+        slides[slideIndex].style.display = "block";
+    }
+    </script>
+
+</body>
+</html>

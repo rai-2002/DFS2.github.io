@@ -1,1 +1,145 @@
-<h1>Hello world!!</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LUMINA2024</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d2b34c5e2f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="lumina3.css">
+    </head>
+
+<body>
+    <div class="container-wrap">
+
+        <header class="header">
+
+            <div class="logo-menu">
+
+                <div class="logo">
+                    <a href="index3.html">
+                        <img src="logo3.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="menu">
+                    <nav class="sidebar">
+                        <div class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">EXHIBITION SHOWCASE</a></li>
+                            <li><a href="#">INDIVIDUAL EXHIBITION</a></li>
+                            <li><a href="#">SPONSORS</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <div class="instagram">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </header>
+
+
+        <main class="main-content">
+            <div class="title-container">
+                <p id="lumina"><span>L</span><span>U</span><span>M</span><span>I</span><span>N</span><span>A</span></p>
+                <p id="year"><span>20<br></span><span>24</span></p>
+            </div>
+            <div class="subtitle-container">
+                <p>Bachelor of Fine Arts in Digital Arts<br>Degree Exhibition</p>
+            </div>
+        </main>
+
+        
+        <section class="gallery">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="valletta-28.jpg" alt="Image 1">
+                    <img src="valletta-65.jpg" alt="Image 2">
+                    <img src="valletta-68.jpg" alt="Image 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+
+        <footer class="info">
+            <div class="info-up">
+                <div class="item1">University of Malta</div>
+                <div class="item2">15.05.24</div>
+                <div class="item3">2024</div>
+            </div>
+            <div class="info-separator"><span></span></div> 
+            <!-- Separator Line -->
+            <div class="info-down">
+                <div class="item4">Faculty of Media and Knowledge Sciences</div>
+                <div class="item5">Placeholder Text</div>
+                <div class="item6">Placeholder Text</div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <!-- SCROLL ARROW -->
+    <div class="scroll-arrow">
+        <a href="#page-bottom" class="icon-wrapper">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>  
+
+
+    
+     <!-- BOOTSTRAP Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+     <script>
+        window.onload = function() {
+            const elements = document.querySelectorAll('.main-content p');
+            let delay = 0;
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('fade-in');
+                }, delay);
+                delay += 1000; // Increase delay for each element
+            });
+        };
+    </script>
+
+    <script>
+    let slideIndex = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelectorAll(".carousel-images img");
+        slides[slideIndex].style.display = "none";
+        slideIndex += step;
+        
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+
+        slides[slideIndex].style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
