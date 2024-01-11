@@ -468,8 +468,10 @@ a.icon-wrapper:hover {
     justify-content: space-between;
 }
 
-.main-content {
+.main-container {
     position: relative;
+    padding-right: 5rem;
+    padding-left: 4.5rem;
     z-index: 3;
 }
 
