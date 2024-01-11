@@ -10,7 +10,8 @@
 body, html {
     width: 100%;
     height: 100%;
-    min-height: 200vh;
+    /* min-height: 200vh; */
+    height: 2485px;
     font: Helvetica, sans-serif;
     background-color: black;
     color: whitesmoke;
@@ -34,7 +35,6 @@ body {
     animation: fadeInBackground 2s ease forwards;
     width: 100%;
     height: 100%;
-    min-height: 200vh;
     font: Helvetica, sans-serif;
 }
 
@@ -42,8 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 110px;
+    padding-right: 110px;
     line-height: 1;
 }
 
@@ -57,8 +57,7 @@ body {
     background-color: transparent;
     width: 100%;
     height: 200px;
-    /* height: auto; */
-    padding-top: 5%;
+    padding-top: 100px;
 }
 
 /* SOCIAL MEDIA */
@@ -68,7 +67,6 @@ body {
     align-items: flex-start; /* Centers items vertically */
     font-size: 50px;
     height: 100%;
-    z-index: 0;
 }
 
 .fa-instagram {
@@ -133,7 +131,8 @@ body {
     height: 3px;
     width: 55px;
     background-color: whitesmoke;
-    margin: 4px 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .menu {
@@ -157,7 +156,8 @@ body {
 .menu li a {
     color: whitesmoke;
     text-decoration: none;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
     opacity: 0.5;
 }
@@ -166,6 +166,37 @@ body {
     background-color: transparent;
     opacity: 1;
 }
+
+
+/* TITLE IN HEADER */
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.vertical-text-container {
+    /* The container needs to be positioned to place the vertical text correctly. */
+    position: relative;
+    width: 100px; /* or the width you want for your vertical text area */
+    height: 200px; /* or the height you need */
+    display: flex;
+    align-items: center; /* Centers the text vertically */
+    justify-content: center; /* Centers the text horizontally */
+}
+
+.vertical-text {
+    /* This will rotate the text 90 degrees counterclockwise */
+    transform: rotate(-90deg);
+    transform-origin: center;
+    white-space: nowrap; /* Ensures the text stays on one line */
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    position: fixed;
+}
+
+
 
 
 
@@ -179,18 +210,27 @@ body {
     line-height: 1;
     opacity: 0;
     transition: 5s ease-in-out;
+    /* flex-wrap: wrap; */
 }
 
 .title-animation p.fade-in {
     opacity: 1;
 }
 
+#lumina {
+    display: flex;
+    align-self: flex-end;
+}
 
 #lumina span {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
     font-size: 120px;
     font-weight: 700;
+}
+
+#year {
+    align-self: flex-start;
 }
 
 #year span {
@@ -233,6 +273,87 @@ body {
 #year span:nth-child(2) { animation-delay: 4s; }
 
 
+
+
+
+/* GALLERY: IMAGE CAROUSEL */
+
+.gallery {
+    padding-top: 600px;
+    padding-bottom: 200px;
+}
+
+
+/* SHOWACASE */
+  
+.masonry-gallery {
+    padding-top: 50px;
+    /* Creates a gap between columns */
+    column-gap: 16px;
+    /* Creates a gap between rows */
+    line-height: 0;
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4;    /* Firefox */
+    column-count: 4;         /* Standard syntax */
+}
+
+
+
+.gallery-item {
+    /* ... */
+    position: relative; /* Needed to position the text absolutely within the item */
+    margin-bottom: 16px;
+    break-inside: avoid;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item .gallery-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: white; /* Adjust text color as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    transition: opacity 0.3s ease;
+    opacity: 1; /* Text is fully visible when not hovered */
+}
+
+.gallery-item:hover img {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-text {
+    opacity: 0; /* Text disappears on hover */
+}
+
+
+@media (max-width: 1024px) {
+    .masonry-gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .masonry-gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
 
 
 
@@ -296,7 +417,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-top: 200px;
     opacity: 1;
     text-align: left;
     padding: 0%;
@@ -321,7 +441,7 @@ body {
 
 
 
-
+/* SCROLL ARROW */
 .scroll-arrow {
     position: fixed;
     left: 50%;
@@ -378,3 +498,45 @@ a.icon-wrapper:hover {
 
 
 
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+#lumina span {
+    font-size: 40px;
+}
+
+#year span {
+    font-size: 17px;
+}
+
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+
+
+.carousel-item {
+    height: 400px; /* Adjust height as needed */
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+.exhibition-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.exhibition-description, .exhibition-carousel {
+    flex: 1;
+}
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .exhibition-description, .exhibition-carousel {
+        flex-basis: 100%;
+    }
+}
