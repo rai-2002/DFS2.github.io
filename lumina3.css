@@ -42,8 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding-left: 110px;
-    padding-right: 110px;
+    width: 95%;
+    
     line-height: 1;
 }
 
@@ -295,6 +295,8 @@ body {
     -webkit-column-count: 4; /* Chrome, Safari, Opera */
     -moz-column-count: 4;    /* Firefox */
     column-count: 4;         /* Standard syntax */
+    padding-left: 4.5rem;
+    padding-right: 5rem;
 }
 
 
@@ -322,7 +324,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 99%;
     font-weight: 700;
     color: white; /* Adjust text color as needed */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
@@ -475,7 +477,8 @@ a.icon-wrapper:hover {
 .main-container {
     position: relative;
     padding-right: 5rem;
-    padding-left: 4.5rem;
+    padding-left:  4.5rem;
+    
     z-index: 3;
 }
 
