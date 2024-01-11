@@ -67,7 +67,6 @@ body {
     align-items: flex-start; /* Centers items vertically */
     font-size: 50px;
     height: 100%;
-    padding-top: 8px;
 }
 
 .fa-instagram {
@@ -472,6 +471,29 @@ a.icon-wrapper:hover {
     padding-right: 0%;
     justify-content: space-between;
 }
+
+.main-content {
+    position: relative;
+    z-index: 3;
+}
+
+.header,
+.social-icons {
+    
+    z-index: 1000;
+}
+
+.card-cover{
+    
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+
+
 
 
 
