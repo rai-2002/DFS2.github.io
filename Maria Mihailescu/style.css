@@ -1,0 +1,287 @@
+.home-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-page .overlap-wrapper {
+  background-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, rgb(147.69, 147.69, 147.69) 0%, rgba(147.69, 147.69, 147.69, 0) 100%);
+  width: 1920px;
+  height: 1427px;
+}
+
+.home-page .overlap {
+  position: relative;
+  width: 1899px;
+  height: 1427px;
+  left: 21px;
+}
+
+.home-page .overlap-group {
+  position: absolute;
+  width: 1842px;
+  height: 1427px;
+  top: 0;
+  left: 57px;
+}
+
+.home-page .div {
+  position: absolute;
+  width: 1203px;
+  height: 1427px;
+  top: 0;
+  left: 639px;
+}
+
+.home-page .element-large {
+  position: absolute;
+  width: 662px;
+  height: 595px;
+  top: 90px;
+  left: 243px;
+  object-fit: cover;
+}
+
+.home-page .img {
+  position: absolute;
+  width: 445px;
+  height: 380px;
+  top: 0;
+  left: 758px;
+  object-fit: cover;
+}
+
+.home-page .element {
+  position: absolute;
+  width: 626px;
+  height: 539px;
+  top: 434px;
+  left: 445px;
+  object-fit: cover;
+}
+
+.home-page .black-and-white {
+  position: absolute;
+  width: 590px;
+  height: 599px;
+  top: 724px;
+  left: 613px;
+  object-fit: cover;
+}
+
+.home-page .pexels-john-mor {
+  position: absolute;
+  width: 242px;
+  height: 667px;
+  top: 206px;
+  left: 961px;
+  object-fit: cover;
+}
+
+.home-page .image {
+  position: absolute;
+  width: 705px;
+  height: 342px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.home-page .pexels-john-mor-2 {
+  position: absolute;
+  width: 618px;
+  height: 42px;
+  top: 0;
+  left: 470px;
+  object-fit: cover;
+}
+
+.home-page .image-2 {
+  position: absolute;
+  width: 385px;
+  height: 351px;
+  top: 1076px;
+  left: 818px;
+  object-fit: cover;
+}
+
+.home-page .group {
+  position: absolute;
+  width: 698px;
+  height: 225px;
+  top: 466px;
+  left: 0;
+}
+
+.home-page .overlap-group-2 {
+  position: relative;
+  width: 692px;
+  height: 226px;
+  top: -1px;
+  left: -1px;
+}
+
+.home-page .text-wrapper {
+  position: absolute;
+  width: 692px;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 1px #222222;
+  font-family: "Italiana", Helvetica;
+  font-weight: 400;
+  color: #222222;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-page .text-wrapper-2 {
+  position: absolute;
+  width: 82px;
+  top: 29px;
+  left: 524px;
+  transform: rotate(68.27deg);
+  -webkit-text-stroke: 1px #ffffff;
+  font-family: "Italiana", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.home-page .our-exhibition {
+  position: absolute;
+  width: 594px;
+  top: 114px;
+  left: 0;
+  -webkit-text-stroke: 0.5px #222222;
+  font-family: "Khand", Helvetica;
+  font-weight: 400;
+  color: #222222;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-page .text-wrapper-3 {
+  position: absolute;
+  width: 71px;
+  top: 1372px;
+  left: 222px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "Khand", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-page .overlap-2 {
+  position: absolute;
+  width: 182px;
+  height: 116px;
+  top: 1287px;
+  left: 35px;
+}
+
+.home-page .overlap-3 {
+  position: absolute;
+  width: 182px;
+  height: 94px;
+  top: 23px;
+  left: 0;
+}
+
+.home-page .text-wrapper-4 {
+  position: absolute;
+  width: 91px;
+  top: 62px;
+  left: 90px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "Khand", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.home-page .img-2 {
+  position: absolute;
+  width: 61px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.home-page .group-2 {
+  position: absolute;
+  width: 116px;
+  height: 44px;
+  top: 37px;
+  left: 6px;
+}
+
+.home-page .line {
+  width: 116px;
+  top: 15px;
+  left: 0;
+  position: absolute;
+  height: 8px;
+}
+
+.home-page .line-2 {
+  width: 62px;
+  top: -8px;
+  left: 54px;
+  position: absolute;
+  height: 8px;
+}
+
+.home-page .line-3 {
+  width: 71px;
+  top: 36px;
+  left: 0;
+  position: absolute;
+  height: 8px;
+}
+
+.home-page .element-facebook {
+  position: absolute;
+  width: 49px;
+  height: 45px;
+  top: 0;
+  left: 66px;
+  object-fit: cover;
+}
+
+.home-page .navbar {
+  position: absolute;
+  width: 569px;
+  height: 17px;
+  top: 34px;
+  left: 89px;
+} 
+
+a.nav-link {
+  
+  font-family:'Khand', sans-serif; 
+  font-size: 20px;
+  
+}
+.navbar-brand{
+  padding:1rem;
+
+}
+
+
+
+
+
