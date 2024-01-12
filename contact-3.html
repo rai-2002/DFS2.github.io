@@ -148,12 +148,21 @@
             </div>
     </div>
         
-        <!-- SCROLL ARROW -->
-        <div class="scroll-arrow">
-            <a href="#page-bottom" class="icon-wrapper">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>  
+                <!-- SCROLL ARROW -->
+                <div class="scroll-arrow">
+                    <a href="javascript:void(0);" onclick="scrollToBottom()" class="icon-wrapper">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+        
+                <div id="page-bottom"></div>
+        
+                <script>
+                    function scrollToBottom() {
+                        const pageBottom = document.getElementById('page-bottom');
+                        pageBottom.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                    }
+                </script>   
 
 
         <script>

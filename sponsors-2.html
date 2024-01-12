@@ -80,48 +80,48 @@
         <div class="container">
             <div class="masonry-gallery">
                 <div class="gallery-item">
-                    <a href="https://www.vca.gov.mt/en/valletta-design-cluster/#">
-                        <img src="sp1.png" alt="Description">
+                    <a href="https://www.vca.gov.mt/en/valletta-design-cluster/#" target="_blank">
+                        <img src="sp1.png" alt="VDC">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://kreattivita.org/en/">
-                        <img src="sp2.png" alt="Description">
+                    <a href="https://kreattivita.org/en/" target="_blank">
+                        <img src="sp2.png" alt="Spazju Kreattiv">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://artscouncilmalta.gov.mt">
-                        <img src="sp3.png" alt="Description">
+                    <a href="https://artscouncilmalta.gov.mt" target="_blank">
+                        <img src="sp3.png" alt="Arts Council mMlta">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://www.ksu.org.mt">
-                        <img src="sp4.png" alt="Description">
+                    <a href="https://www.ksu.org.mt" target="_blank">
+                        <img src="sp4.png" alt="KSU">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://www.um.edu.mt">
-                        <img src="sp5.png" alt="Description">
+                    <a href="https://www.um.edu.mt" target="_blank">
+                        <img src="sp5.png" alt="UM">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://www.pplmalta.com">
-                        <img src="sp6.png" alt="Description">
+                    <a href="https://www.pplmalta.com" target="_blank">
+                        <img src="sp6.png" alt="PPL Malta">
                     </a>
                 </div>
                 <div class="gallery-item">
-                    <a href="https://vgb.mt">
-                        <img src="sp7.png" alt="Description">
+                    <a href="https://vgb.mt" target="_blank">
+                        <img src="sp7.png" alt="VGB">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" target="_blank">
                     <a href="https://motionblur.com.mt">
-                        <img src="sp8.png" alt="Description">
+                        <img src="sp8.png" alt="Motion BLur">
                     </a>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" target="_blank">
                     <a href="https://dna.studio">
-                        <img src="sp9.png" alt="Description">
+                        <img src="sp9.png" alt="DNA">
                     </a>
                 </div>
             </div>
@@ -131,7 +131,7 @@
 
             <!-- Footer -->
 
-            <div class="§container">
+            <div class="container">
                 <footer class="row info">
                     <div class="col-md-12 pt-5">
 
@@ -152,12 +152,21 @@
             </div>
     </div>
         
-        <!-- SCROLL ARROW -->
-        <div class="scroll-arrow">
-            <a href="#page-bottom" class="icon-wrapper">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>  
+               <!-- SCROLL ARROW -->
+               <div class="scroll-arrow">
+                <a href="javascript:void(0);" onclick="scrollToBottom()" class="icon-wrapper">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+    
+            <div id="page-bottom"></div>
+    
+            <script>
+                function scrollToBottom() {
+                    const pageBottom = document.getElementById('page-bottom');
+                    pageBottom.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                }
+            </script>   
 
 
         <script>
