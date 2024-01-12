@@ -47,6 +47,10 @@ body {
     line-height: 1;
 }
 
+.container-info {
+    padding-top: 600px;
+}
+
 /* HEADER */
 .header {
     display: flex;
@@ -241,6 +245,8 @@ body {
 }
 
 .degree-exhibition {
+    flex-wrap: nowrap;
+    font-size: 16px;
     font-weight: 150;
     padding-left: 52px;
 }
@@ -448,6 +454,11 @@ text-align: justify;
     height:300px;
 }
 
+.info-bottom {
+    padding-bottom: 100px;
+}
+
+
 .info-up, .info-down {
     display: flex;
     width: 100%;
@@ -462,6 +473,10 @@ text-align: justify;
     height: 1.5px;
     background-color: whitesmoke;
     margin: 0.5rem 0;
+}
+
+.container-contact {
+    padding-bottom: 100px;
 }
 
 
@@ -581,7 +596,7 @@ p, h1 {
 
     /* Reduce padding and margins for smaller screens */
     .social-icons, .logo-menu {
-        padding: 0 5px; /* Smaller padding */
+        padding: 0 0px; /* Smaller padding */
     }
 
     /* Ensure the elements do not exceed screen width */
@@ -617,7 +632,9 @@ p, h1 {
     }
 
     .degree-exhibition {
-        padding: 0px;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        font-weight: 150;
         padding-left: 5px;
     }
 }
@@ -642,7 +659,7 @@ p, h1 {
 
     /* Adjust padding for tablet screens */
     .social-icons, .logo-menu {
-        padding: 0 8px;
+        padding: 0 0px;
     }
 
     /* Adjust the menu icon size for tablets */
@@ -664,4 +681,10 @@ p, h1 {
     #lumina span {
         font-size: 60px;
     }
+   #year span {
+        font-size: 60px;
+    }
+
 }
+
+

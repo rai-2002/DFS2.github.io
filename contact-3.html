@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPONSORS</title>
+    <title>CONTACT</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesone -->
@@ -78,51 +78,47 @@
 
 
         <div class="container">
-            <div class="masonry-gallery">
-                <div class="gallery-item">
-                    <a href="https://www.vca.gov.mt/en/valletta-design-cluster/#">
-                        <img src="sp1.png" alt="Description">
-                    </a>
+            <div class="row main-container align-items-center justify-content-center gx-5">
+
+                <!-- Main Content: First Column -->
+                <div class="col-md-6 text-sm-end">
+                    <h2>GET IN TOUCH</h2>
+                    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quaerat autem corrupti asperiores accusantium et fuga! Facere excepturi, quo eos, nobis doloremque dolor labore expedita illum iusto, aut repellat fuga!</p>
                 </div>
-                <div class="gallery-item">
-                    <a href="https://kreattivita.org/en/">
-                        <img src="sp2.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://artscouncilmalta.gov.mt">
-                        <img src="sp3.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.ksu.org.mt">
-                        <img src="sp4.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.um.edu.mt">
-                        <img src="sp5.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://www.pplmalta.com">
-                        <img src="sp6.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://vgb.mt">
-                        <img src="sp7.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://motionblur.com.mt">
-                        <img src="sp8.png" alt="Description">
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="https://dna.studio">
-                        <img src="sp9.png" alt="Description">
-                    </a>
+
+                <!-- Main Content: Second Column -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <form class="mb-12" method="post" id="contactForm" name="contactForm">
+                    <div class="row">
+                        
+                        <div class="col-md-8 form-group">
+                        <label for="name" class="col-form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 form-group">
+                        <label for="email" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-8 form-group pb-4">
+                        <label for="message" class="col-form-label">Message</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                        <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 bg-dark border-0">
+                        <span class="submitting"></span>
+                        </div>
+                    </div>
+                    </form>
+        
+                    <div id="form-message-warning mt-4"></div> 
+                    <div id="form-message-success">Your message was sent, thank you!</div>
                 </div>
             </div>
         </div>
@@ -131,7 +127,7 @@
 
             <!-- Footer -->
 
-            <div class="§container">
+            <div class="container container-info">
                 <footer class="row info">
                     <div class="col-md-12 pt-5">
 
