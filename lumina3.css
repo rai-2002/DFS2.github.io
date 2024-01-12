@@ -43,8 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 95%;
-    
+    width: 90%;
     line-height: 1;
 }
 
@@ -64,8 +63,8 @@ body {
 /* SOCIAL MEDIA */
 .social-icons {
     display: flex;
-    justify-content: flex-end; /* Aligns content to the end (right) */
-    align-items: flex-start; /* Centers items vertically */
+    justify-content: flex-end;
+    align-items: flex-start;
     font-size: 50px;
     height: 100%;
 }
@@ -93,7 +92,7 @@ body {
 
 /* LOGO */
 .logo-menu > .logo, .logo-menu > .menu, .social-icons > .instagram, .social-icons > .facebook {
-    text-align: center;
+    text-align: left;
     color: whitesmoke;
 }
 
@@ -172,18 +171,17 @@ body {
 
 .vertical-text-container {
     position: fixed;
-    width: 100px; /* or the width you want for your vertical text area */
-    height: 100vh; /* or the height you need */
+    width: 100px;
+    height: 100vh;
     display: flex;
-    align-items: flex-end; /* Centers the text vertically */
-    justify-content: center; /* Centers the text horizontally */
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .vertical-text {
-    /* This will rotate the text 90 degrees counterclockwise */
     transform: rotate(-90deg);
     transform-origin: center;
-    white-space: nowrap; /* Ensures the text stays on one line */
+    white-space: nowrap;
     font-size: 25px;
     font-weight: 700;
     text-align: left;
@@ -275,31 +273,25 @@ body {
 /* GALLERY: IMAGE CAROUSEL */
 
 .gallery {
-    padding-top: 600px;
-    padding-bottom: 200px;
+    padding-top: 200px;
 }
 
 
-/* SHOWACASE */
+/* EXHIBITION SHOWACASE */
   
 .masonry-gallery {
     padding-top: 50px;
-    /* Creates a gap between columns */
     column-gap: 16px;
-    /* Creates a gap between rows */
     line-height: 0;
     -webkit-column-count: 4; /* Chrome, Safari, Opera */
     -moz-column-count: 4;    /* Firefox */
     column-count: 4;         /* Standard syntax */
-    padding-left: 4.5rem;
-    padding-right: 5rem;
+    align-items: baseline;
 }
 
 
-
 .gallery-item {
-    /* ... */
-    position: relative; /* Needed to position the text absolutely within the item */
+    position: relative;
     margin-bottom: 16px;
     break-inside: avoid;
 }
@@ -322,10 +314,10 @@ body {
     justify-content: center;
     font-size: 99%;
     font-weight: 700;
-    color: white; /* Adjust text color as needed */
+    color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     transition: opacity 0.3s ease;
-    opacity: 1; /* Text is fully visible when not hovered */
+    opacity: 1;
 }
 
 .gallery-item:hover img {
@@ -333,7 +325,7 @@ body {
 }
 
 .gallery-item:hover .gallery-text {
-    opacity: 0; /* Text disappears on hover */
+    opacity: 0;
 }
 
 
@@ -353,6 +345,29 @@ body {
     }
 }
 
+
+
+/* INDIVIDUAL EXHIBITION */
+
+.individual-exhibition-content {
+    height: fit-content;
+    
+}
+
+.individual-exhibition-content p {
+padding-top: 50px;
+padding-bottom: 50px;
+font-weight: 200;
+font-size: 26;
+line-height: 1.3;
+text-align: justify;
+/* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.middle-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 
 
@@ -411,6 +426,7 @@ body {
 .info {
     font: helvetica, sans-serif;
     font-weight: 200;
+    font-size: 10pt;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,6 +435,7 @@ body {
     text-align: left;
     padding: 0%;
     background: transparent;
+    height:300px;
 }
 
 .info-up, .info-down {
@@ -520,11 +537,14 @@ a.icon-wrapper:hover {
 
 
 .carousel-item {
-    height: 400px; /* Adjust height as needed */
+    height: 500px;
+
 }
 .carousel-item img {
-    height: 100%;
+    width: auto;
     object-fit: cover;
+    border: whitesmoke;
+    stroke-width: 10px;
 }
 .exhibition-content {
     display: flex;
@@ -538,4 +558,18 @@ a.icon-wrapper:hover {
     .exhibition-description, .exhibition-carousel {
         flex-basis: 100%;
     }
+}
+
+.carousel-home {
+padding-top: 200px;
+}
+
+
+.img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); Horizontal offset, vertical offset, blur radius, spread radius, color
+}
+
+p, h1 {
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA2024</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesone -->
+    <script src="https://kit.fontawesome.com/d2b34c5e2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lumina3.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header Container -->
+        <div class="row header">
+            <!-- Header - First Column -->
+            <div class="col-md-6 col-sm-6">
+                <header class="logo-menu">
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="logo3.svg" alt="Logo">
+                            </a>
+                        </div>
+        
+                        <div class="menu">
+                            <nav class="sidebar">
+                                <div class="menu-icon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="exhibition-showcase-2.html">EXHIBITION SHOWCASE</a></li>
+                                    <li><a href="individual-exhibition.html">INDIVIDUAL EXHIBITION</a></li>
+                                    <li><a href="sponsors.html">SPONSORS</a></li>
+                                    <li><a href="contact2.html">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                </header>
+            </div>
+            <!-- Header - Second Column -->
+            <div class="col-md-6 col-sm-6 social-icons">
+                <header>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </div>
+                </header>
+            </div>
+        </div>
+
+
+
+        <div class="container gx-6">
+            <!-- Row 1 -->
+            <div class="row main-content align-items-start justify-content-start">
+                
+                <div class="col col-md-4 col-sm-4 align-self-end">
+                    <p id="lumina"><span>L</span><span>U</span><span>M</span><span>I</span><span>N</span><span>A</span></p>
+                </div>
+
+                <div class="col col-md-2 col-sm-2 align-self-start">
+                    <p id="year"><span>20<br></span><span>24</span></p>
+                </div>
+            </div>
+        
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="col col-md-4 col-sm-4 align-flex-start">
+                    <p class="degree-exhibition">Bachelor of Fine Arts in Digital Arts<br>Degree Exhibition</p>
+                </div>
+            </div>
+
+        
+            <!-- Row 3 -->
+            <div class="row main-content">
+                <div class="col-md-6 flex-end">
+                    <div>
+                        <p>Description for the according image in the carousel</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 justify-flex-end align-flex-end">
+                    <!-- Image Carousel -->
+                    <div class="exhibition-carousel carousel-home">
+                        <div id="exhibitionCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="ph-image-7.jpg" class="d-block w-100" alt="Exhibit 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ph-image-7a.jpg" class="d-block w-100" alt="Exhibit 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ph-image-7b.jpg" class="d-block w-100" alt="Exhibit 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Footer -->
+        <div class="container-fluid">
+            <footer class="row info">
+                <div class="col-md-12 pt-5">
+                    <div class="info-up">
+                        <div class="item1">University of Malta</div>
+                        <div class="item2">15.05.24</div>
+                        <div class="item3">2024</div>
+                    </div>
+                    <div class="info-separator"><span></span></div> 
+                    <!-- Separator Line -->
+                    <div class="info-down">
+                        <div class="item4">Faculty of Media and Knowledge Sciences</div>
+                        <div class="item5">Placeholder Text</div>
+                        <div class="item6">Placeholder Text</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+        
+        <!-- SCROLL ARROW -->
+        <div class="scroll-arrow">
+            <a href="#page-bottom" class="icon-wrapper">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+        
+    <script>
+    window.onload = function() {
+        const elements = document.querySelectorAll('.title-animation p');
+        let delay = 0;
+        elements.forEach((element, index) => {
+            setTimeout(() => {
+                element.classList.add('fade-in');
+            }, delay);
+            delay += 900; // Increase delay for each element
+        });
+    };
+    </script>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

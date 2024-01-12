@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUMINA2024</title>
+    <title>EXHIBITION SHOWCASE</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesone -->
     <script src="https://kit.fontawesome.com/d2b34c5e2f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <link rel="stylesheet" href="lumina3.css">
 </head>
 <body>
 
 
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <!-- Header Container -->
         <div class="row header">
             <!-- Header - First Column -->
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-4 col-sm-4">
                 <header class="logo-menu">
 
                         <div class="logo">
@@ -37,15 +38,19 @@
                                     <li><a href="index.html">HOME</a></li>
                                     <li><a href="exhibition-showcase-2.html">EXHIBITION SHOWCASE</a></li>
                                     <li><a href="individual-exhibition.html">INDIVIDUAL EXHIBITION</a></li>
-                                    <li><a href="sponsors-2.html">SPONSORS</a></li>
+                                    <li><a href="sponsors.html">SPONSORS</a></li>
                                     <li><a href="contact2.html">CONTACT</a></li>
                                 </ul>
                             </nav>
                         </div>
                 </header>
+
+
             </div>
+                
+
             <!-- Header - Second Column -->
-            <div class="col-md-6 col-sm-6 social-icons">
+            <div class="col-md-4 col-sm-4 social-icons">
                 <header>
                         <div class="instagram">
                             <a href="https://www.instagram.com" target="_blank">
@@ -60,74 +65,96 @@
                 </header>
             </div>
         </div>
-    
 
-        <div class="container-fluid">
-            <div class="title-animation">
-                
-                <div class="row main-content align-items-start justify-content-start gx-5 title-container">
-                    <div class="col col-md-4 col-sm-4">
-                        <p id="lumina"><span>L</span><span>U</span><span>M</span><span>I</span><span>N</span><span>A</span></p>
+        <!-- Page Name  -->
+        <div class="container-page-name">
+            <div class="row page-name">
+                <!-- <div class="col-md-12"> -->
+                    <div class="vertical-text-container align-items-center">
+                        <span class="vertical-text">EXHIBITION SHOWCASE</span>
                     </div>
-                    <div class="col col-md-7 col-sm-7">
-                        <p id="year"><span>20<br></span><span>24</span></p>
-                    </div>
-                </div>
-        
-                <div class="row main-content align-items-center justify-content-center subtitle-container">
-                    <div class="col col-md-4 col-sm-4">
-                        <p class="degree-exhibition">Bachelor of Fine Arts in Digital Arts<br>Degree Exhibition</p>
-                    </div>
-                </div>
+                <!-- </div> -->
             </div>
-        </div> 
+        </div>
 
 
-        <div class="container my-4 gx-5 gallery">
+        <!-- <div class="logo">
+            <a href="index.html">
+                <img src="logo3.svg" alt="Logo">
+            </a>
+        </div> -->
 
-            <div class="exhibition-content align-items-center">
-                <!-- Text Description -->
-                <div class=" row exhibition-description">
-                    <h1>Shining Light On</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus at omnis totam animi nesciunt voluptatum voluptas unde. Saepe alias molestiae laudantium rerum harum molestias. Temporibus, exercitationem! Autem assumenda, veniam deleniti voluptatibus dolor, sunt non hic repudiandae eaque deserunt, velit minus doloribus corrupti magnam libero. Enim vel quasi quam reprehenderit.</p>
-                    <!-- Additional text or elements -->
+
+        <div class="container">
+
+
+            <div class="masonry-gallery">
+                
+                <div class="gallery-item">
+                    <a href="https://www.vca.gov.mt/en/valletta-design-cluster/#">
+                        <img src="sp1.png" alt="Description">
+                    </a>
                 </div>
-        
-                <!-- Image Carousel -->
-                <div class="exhibition-carousel">
-                    <div id="exhibitionCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="valletta-28.jpg" class="d-block w-100" alt="Exhibit 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="valletta-65.jpg" class="d-block w-100" alt="Exhibit 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="valletta-68.jpg" class="d-block w-100" alt="Exhibit 3">
-                            </div>
-                            <!-- Add more items here -->
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#exhibitionCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+
+                <div class="gallery-item">
+                    <a href="https://kreattivita.org/en/">
+                        <img src="sp2.png" alt="Description">
+                    </a>
                 </div>
+
+                <div class="gallery-item">
+                    <a href="https://artscouncilmalta.gov.mt">
+                        <img src="sp3.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://www.ksu.org.mt">
+                        <img src="sp4.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://www.um.edu.mt">
+                        <img src="sp5.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://www.pplmalta.com">
+                        <img src="sp6.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://vgb.mt">
+                        <img src="sp7.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://motionblur.com.mt">
+                        <img src="sp8.png" alt="Description">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="https://dna.studio">
+                        <img src="sp9.png" alt="Description">
+                    </a>
+                </div>
+
             </div>
             
         </div>
+        
 
 
             <!-- Footer -->
 
             <div class="container">
-                <footer class="row">
-                    <div class="col-md-12 pt-5 info">
+                <footer class="row info">
+                    <div class="col-md-12 pt-5">
 
                             <div class="info-up">
                                 <div class="item1">University of Malta</div>
@@ -168,6 +195,32 @@
             };
         </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var grid = document.querySelector('.image-gallery');
+    var masonry = new Masonry(grid, {
+        itemSelector: '.gallery-item',
+        columnWidth: '.gallery-item',
+        percentPosition: true,
+        gutter: 15
+    });
+});
+</script>
+
+<script>
+    // Initialize Masonry
+    var elem = document.querySelector('.image-gallery');
+    var msnry = new Masonry( elem, {
+      // options
+      itemSelector: '.gallery-item',
+      columnWidth: 200, // Adjust this value based on your actual column width or remove it to use the natural width of the items
+      percentPosition: true,
+      gutter: 10 // Adjust spacing between items
+    });
+    </script>    
+
+
+<script src="script.js"></script>
 
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
