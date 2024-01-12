@@ -58,6 +58,7 @@ body {
     width: 100%;
     height: 200px;
     padding-top: 100px;
+    flex-wrap: ;
 }
 
 /* SOCIAL MEDIA */
@@ -67,11 +68,11 @@ body {
     align-items: flex-start;
     font-size: 50px;
     height: 100%;
-    padding-right: 0%;
 }
 
 .fa-instagram {
-    color: whitesmoke;padding-bottom: 9px;
+    color: whitesmoke;
+    padding-bottom: 9px;
 }
 .fa-square-facebook {
     color: whitesmoke;
@@ -520,31 +521,6 @@ a.icon-wrapper:hover {
 
 
 
-
-
-
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-#lumina span {
-    font-size: 40px;
-}
-
-#year span {
-    font-size: 17px;
- 
-}
-
-}
-
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-
-}
-
-
-
 .carousel-item {
     height: 500px;
 
@@ -581,4 +557,76 @@ padding-top: 200px;
 p, h1 {
     text-shadow: 0, 4px 8px 0 rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
 
+}
+
+
+
+/* RESPONSIVE CLASSES */
+
+/* Adjustments for phone devices */
+@media (max-width: 768px) {
+    /* Reduce the size of the logo */
+    .logo img {
+        width: 36px; /* Adjust the size as needed */
+    }
+
+    /* Reduce the size of the social media icons */
+    .social-icons i {
+        font-size: 30px; /* Adjust the size as needed */
+        padding: 20px;
+    }
+
+    .fa-instagram {
+        padding-bottom: 0px;
+    }
+
+    /* Adjust the menu icon size */
+    .menu-icon span {
+        width: 35px; /* Adjust the width as needed */
+        height: 2px; /* Adjust the height as needed */
+    }
+
+    /* Ensure header elements do not wrap */
+    .header {
+        flex-wrap: nowrap;
+        padding-top: 20px;
+    }
+
+    #lumina span {
+        font-size: 50px;
+    }
+    
+    #year span {
+        font-size: 20px;
+    }
+}
+    
+    /* Tablets */
+    @media (min-width: 769px) and (max-width: 1024px) {
+    
+    }
+    
+
+/* Adjustments for tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Slightly reduce the size of the logo for tablets */
+    .logo img {
+        width: 46px; /* Adjust the size as needed */
+    }
+
+    /* Slightly reduce the size of the social media icons for tablets */
+    .social-icons i {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    /* Adjust the menu icon size for tablets */
+    .menu-icon span {
+        width: 45px; /* Adjust the width as needed */
+        height: 3px; /* Adjust the height as needed */
+    }
+
+    /* Ensure header elements do not wrap */
+    .header {
+        flex-wrap: nowrap;
+    }
 }
