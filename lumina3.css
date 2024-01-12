@@ -55,9 +55,9 @@ body {
     position: sticky;
     top: 0;
     background-color: transparent;
-    width: 100%;
+    width: auto;
     height: 200px;
-    padding-top: 100px;
+    padding-top: 60px;
     flex-wrap: ;
 }
 
@@ -201,13 +201,13 @@ body {
 /* TITLE ANIMATION */
 .title-animation {
     padding-top: 350px;
+    flex-wrap: wrap;
 }
 
 .title-animation p {
     line-height: 1;
     opacity: 0;
     transition: 5s ease-in-out;
-    /* flex-wrap: wrap; */
 }
 
 .title-animation p.fade-in {
@@ -228,18 +228,21 @@ body {
 
 #year {
     align-self: flex;
+    padding-top: 12px;
+    padding-left: 25px;
    
 }
 
 #year span {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
-    font-size: 51px;
+    font-size: 49px;
     font-weight: 400;
 }
 
 .degree-exhibition {
     font-weight: 150;
+    padding-left: 52px;
 }
 
 @keyframes fadeIn {
@@ -278,7 +281,7 @@ body {
 /* GALLERY: IMAGE CAROUSEL */
 
 .gallery {
-    padding-top: 200px;
+    padding-top: 300px;
 }
 
 
@@ -565,15 +568,25 @@ p, h1 {
 
 /* Adjustments for phone devices */
 @media (max-width: 768px) {
+
+
     /* Reduce the size of the logo */
     .logo img {
         width: 36px; /* Adjust the size as needed */
     }
 
-    /* Reduce the size of the social media icons */
     .social-icons i {
-        font-size: 30px; /* Adjust the size as needed */
-        padding: 20px;
+        font-size: 30px; /* Smaller icon size */
+    }
+
+    /* Reduce padding and margins for smaller screens */
+    .social-icons, .logo-menu {
+        padding: 0 5px; /* Smaller padding */
+    }
+
+    /* Ensure the elements do not exceed screen width */
+    .header, .social-icons, .logo-menu {
+        max-width: 100%;
     }
 
     .fa-instagram {
@@ -589,15 +602,23 @@ p, h1 {
     /* Ensure header elements do not wrap */
     .header {
         flex-wrap: nowrap;
-        padding-top: 20px;
+        padding-top: 10px;
+        width: auto;
     }
 
     #lumina span {
         font-size: 50px;
+        padding: 0px;
     }
     
     #year span {
         font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .degree-exhibition {
+        padding: 0px;
+        padding-left: 5px;
     }
 }
     
@@ -616,7 +637,12 @@ p, h1 {
 
     /* Slightly reduce the size of the social media icons for tablets */
     .social-icons i {
-        font-size: 40px; /* Adjust the size as needed */
+        font-size: 40px; /* Slightly larger icon size for tablets */
+    }
+
+    /* Adjust padding for tablet screens */
+    .social-icons, .logo-menu {
+        padding: 0 8px;
     }
 
     /* Adjust the menu icon size for tablets */
@@ -628,5 +654,14 @@ p, h1 {
     /* Ensure header elements do not wrap */
     .header {
         flex-wrap: nowrap;
+        padding: 50px;
+    }
+
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    #lumina span {
+        font-size: 60px;
     }
 }
