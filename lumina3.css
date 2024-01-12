@@ -226,7 +226,8 @@ body {
 }
 
 #year {
-    align-self: flex-start;
+    align-self: flex;
+   
 }
 
 #year span {
@@ -257,6 +258,7 @@ body {
 #year span {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
+    
 }
 
 @keyframes fadeIn {
@@ -493,11 +495,13 @@ a.icon-wrapper:hover {
 
 .main-container {
     position: relative;
-    padding-right: 5rem;
+    padding-right: 4.5rem;
     padding-left:  4.5rem;
     
     z-index: 3;
 }
+
+.con
 
 .header,
 .social-icons {
@@ -528,6 +532,7 @@ a.icon-wrapper:hover {
 
 #year span {
     font-size: 17px;
+ 
 }
 
 }
